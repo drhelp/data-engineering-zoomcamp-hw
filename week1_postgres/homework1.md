@@ -1,11 +1,18 @@
 Question 1: --rm
+
 Question 2: 0.42.0
+
 Question 3: 15612
+
 Question 4: 2019-09-26
+
 Question 5: "Brooklyn" "Manhattan" "Queens"
+
 Question 6: JFK Airport
+
 Question 7: 
-```
+
+``````
 (base) olegd@Olegs-Air-15 week1_postgres % terraform apply  
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -72,4 +79,3 @@ google_bigquery_dataset.dataset: Creation complete after 1s [id=projects/dtc-de-
 google_storage_bucket.data-lake-bucket: Creation complete after 2s [id=dtc_de_bucket1]
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
-```
