@@ -1,0 +1,21 @@
+# Use postgres/example user/password credentials
+services:
+
+  pgdatabase:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgrespwd
+      - POSTGRES_DB=de_zoomcamp
+    ports:
+      - 5432:5432
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=Oleg.Dobretsov@gmail.com
+      - PGADMIN_DEFAULT_PASSWORD=pgadminpwd
+    ports:
+      - 8080:80
